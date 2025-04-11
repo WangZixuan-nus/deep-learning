@@ -32,14 +32,7 @@ MobileNet使用深度可分离卷积模块，并着重于高效和较少参数�
 1. 进一步优化倒置残差和线性瓶颈结构，探索更多的轻量级模型结构，提高模型在资源受限环境下的性能和效率。
 2. “轻量化网络设计”，有多篇对比MobileNet系列与EfficientNet的深度分析
 
-## 实现例子（目前已有人做过的项目）
-项目：
-[Pytorch实现](https://github.com/tonylins/pytorch-mobilenet-v2)
-[MobileNetV2水果识别模型](https://www.cnblogs.com/giperx/p/18189811)
-论文解析：
-[MobileNet-v2网络框架](https://blog.csdn.net/thisiszdy/article/details/90146449)
-[MobileNetV2详细总结以及代码讲解](https://blog.csdn.net/qq128252/article/details/105886883)
 
-附：摘要：
+论文摘要：
 在本文中，我们描述了一种新的移动架构 MobileNetV2，它提高了移动模型在多个任务和基准测试以及各种不同模型尺寸上的最先进性能。我们还描述了在我们称为 SSDLite 的新框架中将这些移动模型应用于对象检测的有效方法。此外，我们还演示了如何通过 DeepLabv3 的简化形式（我们称之为 Mobile DeepLabv3）构建移动语义分割模型。
 MobileNetV2 架构基于倒置残差​​结构，其中残差块的输入和输出是薄瓶颈层，与使用输入中的扩展表示的传统残差模型相反，MobileNetV2 使用轻量级深度卷积来过滤中间扩展层中的特征。此外，我们发现，为了保持表示能力，消除窄层中的非线性非常重要。我们证明了这可以提高性能，并提供了导致这种设计的直觉。最后，我们的方法允许将输入/输出域与转换的表达能力分离，这为进一步分析提供了一个方便的框架。我们测量了 Imagenet 分类、​​COCO 对象检测、VOC 图像分割的性能。我们评估了准确率与乘加运算 (MAdd) 测量的运算次数以及参数数量之间的权衡
