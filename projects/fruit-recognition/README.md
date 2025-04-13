@@ -137,8 +137,8 @@ The MobileNetV2 transfer learning approach demonstrated significant advantages a
 
 The training dynamics revealed significant differences between the two architectures:
 
-![CNN's Training and validation accuracy/loss](results_cnn.png)
-![MobileNetV2's Training and validation accuracy/loss](results_mobilenet.png)
+![CNN's Training and validation accuracy/loss](results/results_cnn.png)
+![MobileNetV2's Training and validation accuracy/loss](results/results_mobilenet.png)
 
 The CNN model exhibited classic overfitting symptoms—rapidly achieving 99.98% training accuracy but plateauing at 63.43% validation accuracy. Conversely, MobileNetV2 maintained a narrower generalization gap (9.47 percentage points), with validation accuracy reaching 90.53%. Additionally, MobileNetV2 converged faster, stabilizing after approximately 7 epochs compared to the CNN's 12 epochs.
 
@@ -146,8 +146,8 @@ The CNN model exhibited classic overfitting symptoms—rapidly achieving 99.98% 
 
 Confusion matrix analysis revealed MobileNetV2's consistent performance across all fruit categories, while the CNN struggled with morphologically complex fruits (longan, lychee) and visually similar categories (for instance, cantaloupe vs. cucumber):
 
-![Heatmap for CNN performance](heatmap_cnn.png)
-![Heatmap for MobileNetV2 performance](heatmap_mobilenet.png)
+![Heatmap for CNN performance](results/heatmap_cnn.png)
+![Heatmap for MobileNetV2 performance](results/heatmap_mobilenet.png)
 
 The most substantial performance difference occurred in the longan classification, where MobileNetV2 (92.3% accuracy) outperformed the CNN (48.7%) by nearly 44 percentage points.
 
